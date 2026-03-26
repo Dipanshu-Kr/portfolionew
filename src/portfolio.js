@@ -52,7 +52,7 @@ function highlightNav() {
 }
 
 /* ===== TYPEWRITER EFFECT ===== */
-const roles = ['Full-Stack Developer', 'UI/UX Designer', 'React Specialist', 'Problem Solver'];
+const roles = ['Full-Stack Developer', 'UI/UX Designer', 'Problem Solver'];
 let roleIndex = 0, charIndex = 0, isDeleting = false;
 const roleText = document.getElementById('role-text');
 
