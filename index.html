@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dipanshu Kumar | Portfolio</title>
+    <link rel="stylesheet" href="/src/portfolio.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  </head>
+  <body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">Dipanshu<span>Kumar</span></a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <!-- <li><a href="#skills" class="nav-link">Skills</a></li> -->
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <span class="blob blob1"></span>
+        <span class="blob blob2"></span>
+        <span class="blob blob3"></span>
+      </div>
+      <div class="hero-content">
+        <p class="hero-greeting">👋 Hello, I'm</p>
+        <h1 class="hero-name">Dipanshu Kumar</h1>
+        <div class="hero-role">
+          <span class="role-text" id="role-text"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          Aspiring web developer with strong front-end fundamentals. Passionate about creating responsive and visually appealing websites. Eager to apply skills in real-world projects.
+        </p>
+        <div class="hero-btns">
+          <a href="/public/Resume.pdf" class="btn btn-primary" download><i class="fas fa-download"></i> Download CV</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Dipanshu-Kr" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/dipanshu-kumar-b07807350/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://x.com/Dipanshu_Kr_" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-ring">
+          <div class="avatar-img-box">
+            <img src="/public/profile.png" alt="Dipanshu Kumar" class="hero-avatar-img" />
+          </div>
+        </div>
+        <!-- <div class="floating-badge badge1"><i class="fab fa-react"></i> React</div>
+        <div class="floating-badge badge2"><i class="fab fa-node-js"></i> Node.js</div>
+        <div class="floating-badge badge3"><i class="fas fa-paint-brush"></i> UI/UX</div> -->
+      </div>
+      <!-- <a href="#skills" class="scroll-down"><i class="fas fa-chevron-down"></i></a> -->
+    </section>
+
+
+
+    <!-- ===== SKILLS ===== -->
+    <!-- <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My <span>Skills</span></h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#f0db4f,#e3b700)"><i class="fab fa-js"></i></div>
+            <h4>JavaScript</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            <span class="skill-pct">92%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#61dbfb,#21a1f1)"><i class="fab fa-react"></i></div>
+            <h4>React / Next.js</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#68a063,#3e7b27)"><i class="fab fa-node-js"></i></div>
+            <h4>Node.js</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#264de4,#2965f1)"><i class="fab fa-css3-alt"></i></div>
+            <h4>CSS / Tailwind</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            <span class="skill-pct">95%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#e44d26,#f16529)"><i class="fab fa-html5"></i></div>
+            <h4>HTML5</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="97"></div></div>
+            <span class="skill-pct">97%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#ff7262,#f24e1e)"><i class="fab fa-figma"></i></div>
+            <h4>Figma / UI Design</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#4479a1,#336799)"><i class="fas fa-database"></i></div>
+            <h4>MySQL / MongoDB</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            <span class="skill-pct">78%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:linear-gradient(135deg,#f05032,#c0392b)"><i class="fab fa-git-alt"></i></div>
+            <h4>Git & DevOps</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            <span class="skill-pct">82%</span>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured <span>Projects</span></h2>
+        </div>
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- ★ REAL PROJECT: NotesBhejo -->
+          <div class="project-card project-featured" data-cat="web">
+            <div class="project-featured-badge"><i class="fas fa-star"></i> Featured</div>
+            <div class="project-img notesbhejo-img">
+              <div class="notesbhejo-logo">
+                <i class="fas fa-paper-plane"></i>
+              </div>
+              <div class="notesbhejo-dots">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Web App</span>
+              <h3>NotesBhejo 📨</h3>
+              <p>A secure note & file sharing web app. Share private notes and files with anyone using a unique 6-digit PIN — no account needed. Supports auto-expiry, burn-after-read, and file attachments up to 50MB.</p>
+              <div class="project-features">
+                <div class="pf-item"><i class="fas fa-lock"></i> PIN-Protected Sharing</div>
+                <div class="pf-item"><i class="fas fa-fire"></i> Burn After Reading</div>
+                <div class="pf-item"><i class="fas fa-clock"></i> Auto-Expiring Notes</div>
+                <div class="pf-item"><i class="fas fa-paperclip"></i> File Attachments (50MB)</div>
+              </div>
+              <div class="project-tech">
+                <span>Next.js</span><span>Node.js</span><span>Vercel</span><span>Security</span>
+              </div>
+              <div class="project-links">
+                <a href="https://notesbhejo.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-sm btn-live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ★ REAL PROJECT: CodeMate -->
+          <div class="project-card project-codemate-featured" data-cat="web">
+            <div class="project-featured-badge codemate-badge"><i class="fas fa-star"></i> Featured</div>
+            <div class="project-img codemate-img">
+              <div class="codemate-logo">
+                <i class="fas fa-users-cog"></i>
+              </div>
+              <div class="codemate-pulse-ring"></div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag codemate-tag">AI Platform</span>
+              <h3>CodeMate 🤝</h3>
+              <p>An AI-powered hackathon teammate finder. Uses semantic matching to connect developers with the right collaborators based on skills, interests, and experience — with real-time chat built in.</p>
+              <div class="project-features">
+                <div class="pf-item pf-indigo"><i class="fas fa-brain"></i> AI Semantic Matching</div>
+                <div class="pf-item pf-indigo"><i class="fas fa-comments"></i> Real-Time Chat</div>
+                <div class="pf-item pf-indigo"><i class="fas fa-search"></i> Skill Gap Analysis</div>
+                <div class="pf-item pf-indigo"><i class="fas fa-trophy"></i> Hackathon Focus</div>
+              </div>
+              <div class="project-tech">
+                <span>React</span><span>Node.js</span><span>WebSocket</span><span>AI</span><span>Render</span>
+              </div>
+              <div class="project-links">
+                <a href="https://codemate-kem0.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-sm btn-codemate"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ★ REAL PROJECT: SpeakText -->
+          <div class="project-card project-speaktext-featured" data-cat="web">
+            <div class="project-featured-badge speaktext-badge"><i class="fas fa-star"></i> Featured</div>
+            <div class="project-img speaktext-img">
+              <div class="speaktext-logo">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div class="speaktext-wave-ring"></div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag speaktext-tag">Utility Tool</span>
+              <h3>SpeakText 🔊</h3>
+              <p>A powerful browser-based Text-to-Speech converter that transforms written content into natural-sounding speech — with full control over voice, speed, pitch, and volume. 100% private, all processing done locally.</p>
+              <div class="project-features">
+                <div class="pf-item pf-teal"><i class="fas fa-bolt"></i> Instant Conversion</div>
+                <div class="pf-item pf-teal"><i class="fas fa-sliders-h"></i> Voice & Pitch Control</div>
+                <div class="pf-item pf-teal"><i class="fas fa-shield-alt"></i> Privacy First</div>
+                <div class="pf-item pf-teal"><i class="fas fa-microphone"></i> Multi-Voice Support</div>
+              </div>
+              <div class="project-tech">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Web Speech API</span><span>Vercel</span>
+              </div>
+              <div class="project-links">
+                <a href="https://text-to-speechh.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-sm btn-speaktext"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contact <span>Me</span></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Let's Work Together</h3>
+            <p>Have a project in mind or just want to say hi? My inbox is always open. I'll get back to you as soon as possible!</p>
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div><strong>Email</strong><span>kumardipanshu127@gmail.com</span></div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                <div><strong>Phone</strong><span>+91 82921 59121</span></div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div><strong>Location</strong><span>Chandigarh, India</span></div>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <a href="https://github.com/Dipanshu-Kr" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/dipanshu-kumar-b07807350/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://x.com/Dipanshu_Kr_" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+          <form action="https://formspree.io/f/mdapobvz" method="POST" class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Abc" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Abc@gmail.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="form-success">
+              <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <a href="#home" class="logo">Dipanshu<span>Kumar</span></a>
+          <!-- <p>Crafting digital experiences with passion & precision.</p> -->
+           <p>Web Developer</p>
+          <!-- <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul> -->
+          <p class="footer-copy">&copy; 2026 All rights reserved. Made with <i class="fas fa-heart"></i> Dipanshu Kumar </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script type="module" src="/src/portfolio.js"></script>
+  </body>
+</html>
